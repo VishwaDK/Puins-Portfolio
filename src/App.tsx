@@ -1,8 +1,10 @@
+import LandingPage from "./pages/landing-page";
+
 function App() {
   return (
     <>
-      <div className="w-full h-screen flex justify-center items-center">
-        I am Vishwa Bulegoda
+      <div>
+        <LandingPage />
       </div>
     </>
   );
