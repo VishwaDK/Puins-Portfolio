@@ -1,13 +1,12 @@
-import Image from '../../../assets/images/me2.png'
+import Image from '../../../assets/images/me.png'
 
 function ProfileImage() {
   return (
-    <div className="flex justify-center mt-[10px]">
-      <div className=' bg-white rounded-full p-[10px]'>
-        <img src={Image} alt="Profile Image" className="rounded-full w-[px] " />
-      </div>
+    <div className='flex justify-center'>
+        <img src={Image} alt="Profile Image" className="rounded-full w-[200px] h- " />
+      
     </div>
-  );
+  )
 }
 
 export default ProfileImage
