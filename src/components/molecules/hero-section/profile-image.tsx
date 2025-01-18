@@ -2,8 +2,8 @@ import Image from "../../../assets/images/me.png";
 
 function ProfileImage() {
   return (
-    <div className="relative flex justify-center flex-col items-center">
-      <div className="relative h-[582px] w-[283px] bg-gradient-to-b from-[#F4F2F2] to-[#F8F8F8] rounded-t-full flex items-start justify-center">
+    <div className="relative flex justify-center flex-col items-center mt-3">
+      <div className="relative  w-[250px] bg-gradient-to-b from-[#F4F2F2] to-[#F8F8F8] rounded-t-full flex items-start justify-center">
         <img
           src={Image}
           alt="Profile Image"
@@ -17,7 +17,7 @@ function ProfileImage() {
             Innovative 3D, Stunning UI, Thoughtful UX.
           </div>
         </div>
-        <div className="absolute top-28 -right-28 left-1/2 flex flex-col items-center justify-center text-center">
+        <div className="absolute top-28 -right-36 left-1/2 flex flex-col items-center justify-center text-center">
           <div className="bg-[#E8E8E8] w-[182px] rounded-full h-fit text-sm py-[8px] italic">
             <span className="text-[#DAFF06]">Vishwa</span>{" "}
             <span className="text-black">Bulegoda</span>
