@@ -3,10 +3,9 @@ import ProfileImage from "../../molecules/hero-section/profile-image";
 
 function HeaderSection() {
   return (
-    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#F7F7F7] min-h-[670px] rounded-bl-[96px] rounded-br-[96px]">
+    <div className="bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF] min-h-[650px] rounded-bl-[96px] rounded-br-[96px]">
       <NavBar/>
       <ProfileImage />
-
     </div>
   );
 }

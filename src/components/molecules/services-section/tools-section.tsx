@@ -8,19 +8,60 @@ import icon5 from "../../../assets/svg/zbrush.svg";
 import icon1 from "../../../assets/svg/unreal.svg";
 
 function ToolsSection() {
-  const icons = [icon1, icon2, icon3, icon4, icon5, icon6, icon7,icon8];
-
+  const icons = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8];
+ 
   return (
-    <div className="flex justify-center mt-[60px]">
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-[40px] sm:gap-[60px] md:gap-[80px] xl:gap-[100px] justify-center items-center">
-        {icons.map((icon, index) => (
-          <div key={index} className="flex justify-center items-center">
-            <img src={icon} alt={`Icon ${index + 1}`} className="w-16 h-16" />
-          </div>
-        ))}
+    <div className="relative w-full overflow-hidden ">
+      <style>{`
+        @keyframes infinite-scroll {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+
+        .scroll-container {
+          animation: infinite-scroll 25s linear infinite;
+        }
+      `}</style>
+      
+      <div className="flex w-full">
+        <div className="flex scroll-container">
+
+          {icons.map((icon, index) => (
+            <div key={index} className="flex-shrink-0 mx-12">
+              <img
+                src={icon}
+                alt={`Tool ${index + 1}`}
+                className="w-16 h-16"
+              />
+            </div>
+          ))}
+
+          {icons.map((icon, index) => (
+            <div key={`dup1-${index}`} className="flex-shrink-0 mx-12">
+              <img
+                src={icon}
+                alt={`Tool ${index + 1}`}
+                className="w-16 h-16"
+              />
+            </div>
+          ))}
+
+          {icons.map((icon, index) => (
+            <div key={`dup2-${index}`} className="flex-shrink-0 mx-12">
+              <img
+                src={icon}
+                alt={`Tool ${index + 1}`}
+                className="w-16 h-16"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
-}
-
+};
 export default ToolsSection;
